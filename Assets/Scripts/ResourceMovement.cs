@@ -20,13 +20,6 @@ public class ResourceMovement : MonoBehaviour {
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     // Get the collision normal and reflect the direction vector
-    //     Vector2 collisionNormal = collision.GetContact(0).normal;
-    //     direction = Vector2.Reflect(direction, collisionNormal).normalized;
-    // }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Get the collision normal and reflect the direction vector

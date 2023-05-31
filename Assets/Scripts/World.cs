@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-  float innerBounds;
+  public float innerBounds { get; private set; }
   [SerializeField] GameObject topBarrier;
   [SerializeField] GameObject leftBarrier;
   [SerializeField] GameObject rightBarrier;
@@ -12,8 +12,6 @@ public class World : MonoBehaviour
 
   private void Awake() {
     CalculateInnerBounds();
-
-
   }
 
   void CalculateInnerBounds() {
